@@ -86,6 +86,12 @@ const promptUser = () => {
                 return false;
             }
         }
+    },
+    {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Select which licenses your project uses.',
+        choices: ['Public Domain', 'Permissive FOSS', 'Copyleft FOSS', 'Freeware/Shareware/Freemium', 'Proprietary License']
     }
     
     ]);
