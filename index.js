@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs');
-const {generateMarkdown} = require('');
+//const generateReadMe = require('./src/template.js');
+const {writeFile} = require('./utils/generateReadme.js');
 // TODO: Create an array of questions for user input
 const promptUser = () => {
     return inquirer.prompt([
@@ -36,7 +36,7 @@ const promptUser = () => {
     {
         type: 'input',
         name: 'installtioninstructions',
-        message: 'Please eneter instructions for the Read Me file.',
+        message: 'Please enter instructions for the Read Me file.',
         validate: installationInput => {
             if (installationInput) {
                 return true;
@@ -50,7 +50,7 @@ const promptUser = () => {
     {
         type: 'input',
         name: 'usageinformation',
-        message: 'Please eneter usage information.',
+        message: 'Please enter usage information.',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -105,6 +105,9 @@ function init() {}
 
 // Function call to initialize app
 promptUser()
+    .then(pageReadMe => {
+        return writeFile(pageReadMe);
+    })
 
 .catch(err => {
     console.log(err);
