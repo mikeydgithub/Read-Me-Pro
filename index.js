@@ -1,13 +1,13 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-//const generateReadMe = require('./src/template.js');
-const {writeFile} = require('./utils/generateReadme.js');
+const { writeFile } = require ('./generate-markdown');
+
 // TODO: Create an array of questions for user input
 const promptUser = () => {
     return inquirer.prompt([
     {
         type: 'input',
-        name: 'readmename',
+        name: 'title',
         message: 'What is the name of your Read Me? (Required)',
         validate: nameInput => {
             if (nameInput) {
@@ -21,8 +21,8 @@ const promptUser = () => {
     },
     {
         type: 'input',
-        name: 'confirmdescription',
-        message: "Please add a description?",
+        name: 'description',
+        message: "Please add a description",
         validate: descriptionInput => {
             if (descriptionInput) {
                 return true;
@@ -35,7 +35,7 @@ const promptUser = () => {
     },
     {
         type: 'input',
-        name: 'installtioninstructions',
+        name: 'installtion',
         message: 'Please enter instructions for the Read Me file.',
         validate: installationInput => {
             if (installationInput) {
@@ -49,7 +49,7 @@ const promptUser = () => {
     },
     {
         type: 'input',
-        name: 'usageinformation',
+        name: 'usage',
         message: 'Please enter usage information.',
         validate: usageInput => {
             if (usageInput) {
@@ -91,17 +91,23 @@ const promptUser = () => {
         type: 'checkbox',
         name: 'license',
         message: 'Select which licenses your project uses.',
-        choices: ['Public Domain', 'Permissive FOSS', 'Copyleft FOSS', 'Freeware/Shareware/Freemium', 'Proprietary License']
-    }
-    
-    ]);
+        choices: ['Apache', 'MIT', 'GPL', 'GNU', 'N/A']
+    }   
+    ])
+    .then(projectData => {
+            readMeData.projects.push(projectData);
+            if (projectData.confirmedAddProject){
+                return promptProject(readMeData);
+            } else {
+                return readMeData;
+            }
+        });
 };
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+
+
 
 // Function call to initialize app
 promptUser()
