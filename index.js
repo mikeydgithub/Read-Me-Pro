@@ -95,26 +95,19 @@ const promptUser = () => {
     }   
     ])
     .then(projectData => {
-            readMeData.projects.push(projectData);
-            if (projectData.confirmedAddProject){
-                return promptProject(readMeData);
+            //readMeData.projects.push(projectData);
+            console.log(projectData)
+            if (projectData){
+                return writeFile(projectData);
             } else {
-                return readMeData;
+                return
             }
         });
 };
 
 
 // TODO: Create a function to initialize app
-
-
-
 // Function call to initialize app
 promptUser()
-    .then(pageReadMe => {
-        return writeFile(pageReadMe);
-    })
 
-.catch(err => {
-    console.log(err);
-});
+
