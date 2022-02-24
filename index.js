@@ -35,7 +35,7 @@ const promptUser = () => {
     },
     {
         type: 'input',
-        name: 'installtion',
+        name: 'installation',
         message: 'Please enter instructions for the Read Me file.',
         validate: installationInput => {
             if (installationInput) {
@@ -91,11 +91,10 @@ const promptUser = () => {
         type: 'checkbox',
         name: 'license',
         message: 'Select which licenses your project uses.',
-        choices: ['Apache', 'MIT', 'GPL', 'GNU', 'N/A']
+        choices: ['Apache', 'MIT', 'GPL', 'BSD', 'N/A']
     }   
     ])
     .then(projectData => {
-            //readMeData.projects.push(projectData);
             console.log(projectData)
             if (projectData){
                 return writeFile(projectData);

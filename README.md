@@ -1,17 +1,18 @@
 
 
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) || [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
   # Title 
-    *Mikes ReadMe
+    * 1
   ## Installation
-    *undefined
+    * 3
   ## Usage
-    *This will create readme files.
+    * 4
   ## Contribution
-    *Hamzah helped.
+    * 5
   ## Test
-    *This is the first test.
+    * 6
   ## License
-    *Apache
+    * Apache,GPL
   ## Description
-    *Testing Description
+    * 2
   

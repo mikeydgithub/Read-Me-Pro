@@ -20,9 +20,12 @@ const writeFile = fileContent => {
   });
 };
 const pageTemplate =  templateArr => {
+  // ${renderLicenseBadge (templateArr.license)}
   return `
 
-  ${renderLicenseBadge (templateArr.license)}
+  ${templateArr.license.map(function buildBagde (userChoice){
+    return renderLicenseLink (userChoice)
+  }).join(' || ')} 
   # Title 
     * ${templateArr.title}
   ## Installation
@@ -40,26 +43,38 @@ const pageTemplate =  templateArr => {
   `
 };
 
+// Create the array for badge types
+const badgeType = 
+[
+  {userChoice: 'GPL', badgeUrl: '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'},
+  {userChoice: 'Apache', badgeUrl:'[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'},
+  {userChoice: 'BSD', badgeUrl:'[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'},
+  {userChoice: 'MIT', badgeUrl:'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'}
+]
 
+// Use renderLicenseBadge to take license and set it equal to userChoice
 
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-const renderLicenseBadge = license => {
-  return 
-}
+// const renderLicenseBadge = license => {
+//   return ['Apache', 'MIT', 'GPL', 'BSD', 'N/A']
+// }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 const renderLicenseLink = license => {
-  return
+  return badgeType.filter (badgeData => badgeTest(badgeData, license))[0].badgeUrl
+}
+function badgeTest (badgeData, license) {
+  return badgeData.userChoice == license
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-const renderLicenseSection = license => {
+// const renderLicenseSection = license => {
 
-}
+// }
 
 // TODO: Create a function to generate markdown for README
 const generateReadMe = data => {
