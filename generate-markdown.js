@@ -20,12 +20,11 @@ const writeFile = fileContent => {
   });
 };
 const pageTemplate =  templateArr => {
-  // ${renderLicenseBadge (templateArr.license)}
   return `
 
   ${templateArr.license.map(function buildBagde (userChoice){
     return renderLicenseLink (userChoice)
-  }).join(' || ')} 
+  })} 
   # Title 
     * ${templateArr.title}
   ## Installation
