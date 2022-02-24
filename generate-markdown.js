@@ -36,7 +36,7 @@ const pageTemplate =  templateArr => {
   ## Test
     * ${templateArr.test}
   ## License
-    * ${templateArr.license}
+    * ${templateArr.license.length > 0 ? templateArr.license : 'N/A'}
   ## Description
     * ${templateArr.description}
   `
@@ -63,22 +63,11 @@ const badgeType =
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 const renderLicenseLink = license => {
-  return badgeType.filter (badgeData => badgeTest(badgeData, license))[0].badgeUrl
+  var results = badgeType.filter (badgeData => badgeTest(badgeData, license))
+  return results.length > 0 ? results[0].badgeUrl : ''
 }
 function badgeTest (badgeData, license) {
   return badgeData.userChoice == license
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// const renderLicenseSection = license => {
-
-// }
-
-// TODO: Create a function to generate markdown for README
-const generateReadMe = data => {
-  return `# ${data.title}
-
-`;
-}
 module.exports = { writeFile };

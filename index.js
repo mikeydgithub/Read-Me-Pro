@@ -90,8 +90,8 @@ const promptUser = () => {
     {
         type: 'checkbox',
         name: 'license',
-        message: 'Select which licenses your project uses.',
-        choices: ['Apache', 'MIT', 'GPL', 'BSD', 'N/A']
+        message: 'Select which licenses your project uses. If N/A press Enter',
+        choices: ['Apache', 'MIT', 'GPL', 'BSD']
     }   
     ])
     .then(projectData => {
