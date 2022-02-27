@@ -1,18 +1,22 @@
 
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
   # Title 
-    * 1
+    * Read Me Pro
   ## Installation
-    * 3
+    *  Use Node to run inquirer in your terminal. Answer the questions to generat
   ## Usage
-    * 4
+    * This will make putting readme files together faster and more convinent.
   ## Contribution
-    * 5
+    * Made by Mike Diamond
   ## Test
-    * 6
+    * Tests including node and inquirer node package manager.
   ## License
-    * Apache,GPL
+    * Apache
   ## Description
-    * 2
+    * This read me file will generate read me files.
+  ### GitHub Username
+    * <a href="github.com/mikeydgithub"</a>
+  ### Email and Contact Information
+    * <a href="$ampgzo2@gmail.com"</a>
   

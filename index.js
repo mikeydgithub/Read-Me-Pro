@@ -92,7 +92,18 @@ const promptUser = () => {
         name: 'license',
         message: 'Select which licenses your project uses. If N/A press Enter',
         choices: ['Apache', 'MIT', 'GPL', 'BSD']
-    }   
+    },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'Enter your GitHub username.'
+    },
+    {
+        type: 'input',
+        name: 'contact',
+        message: 'Please include your email and any additional contact information.'
+
+    }
     ])
     .then(projectData => {
             console.log(projectData)
