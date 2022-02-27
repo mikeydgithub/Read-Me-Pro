@@ -42,11 +42,12 @@ const pageTemplate =  templateArr => {
   ## Description
     * ${templateArr.description}
   ### GitHub Username
-    * <a href="${templateArr.username}"></a>
+    * <a href="github.com/${templateArr.username}"></a>
   ### Email and Contact Information
-    * <a href ="${templateArr.contact}"></a>
+    * ${templateArr.contact}
   `
 };
+
 
 // Create the array for badge types
 const badgeType = 
@@ -57,17 +58,18 @@ const badgeType =
   {userChoice: 'MIT', badgeUrl:'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'}
 ]
 
+// const linkType = [
+//   {userNameLink: '', nameURL: `<a href="github.com/${templateArr.username}"></a>` }
+// ]
+
+
+
+
+
 // Use renderLicenseBadge to take license and set it equal to userChoice
 
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-// const renderLicenseBadge = license => {
-//   return ['Apache', 'MIT', 'GPL', 'BSD', 'N/A']
-// }
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// TODO: Create a function that returns the license link. If there is no license, return an empty string
 const renderLicenseLink = license => {
   var results = badgeType.filter (badgeData => badgeTest(badgeData, license))
   return results.length > 0 ? results[0].badgeUrl : ''
@@ -75,6 +77,7 @@ const renderLicenseLink = license => {
 function badgeTest (badgeData, license) {
   return badgeData.userChoice == license
 }
+
 
 
 module.exports = { writeFile };
