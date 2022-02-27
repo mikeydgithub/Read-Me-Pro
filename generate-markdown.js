@@ -20,6 +20,7 @@ const writeFile = fileContent => {
   });
 };
 
+
 const pageTemplate =  templateArr => {
   return `
 
@@ -41,9 +42,9 @@ const pageTemplate =  templateArr => {
   ## Description
     * ${templateArr.description}
   ### GitHub Username
-    * <a href="${templateArr.username}"</a>
+    * <a href="${templateArr.username}"></a>
   ### Email and Contact Information
-    * <a href="${templateArr.contact}"</a>
+    * <a href ="${templateArr.contact}"></a>
   `
 };
 
@@ -74,5 +75,6 @@ const renderLicenseLink = license => {
 function badgeTest (badgeData, license) {
   return badgeData.userChoice == license
 }
+
 
 module.exports = { writeFile };

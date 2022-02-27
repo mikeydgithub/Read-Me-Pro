@@ -16,7 +16,7 @@
   ## Description
     * 2
   ### GitHub Username
-    * <a href="github.com/mikeydgithub"</a>
+    * <a href="github.com/mikeydgithub"></a>
   ### Email and Contact Information
-    * <a href="ampgzo2@gmail.com"</a>
+    * <a href ="ampgzo2@gmail.com"></a>
   
