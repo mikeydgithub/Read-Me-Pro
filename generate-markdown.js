@@ -19,6 +19,7 @@ const writeFile = fileContent => {
       });
   });
 };
+
 const pageTemplate =  templateArr => {
   return `
 
@@ -40,9 +41,9 @@ const pageTemplate =  templateArr => {
   ## Description
     * ${templateArr.description}
   ### GitHub Username
-    * ${templateArr.username}
+    * <a href="${templateArr.username}"</a>
   ### Email and Contact Information
-    * ${templateArr.contact}"
+    * <a href="${templateArr.contact}"</a>
   `
 };
 
