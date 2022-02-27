@@ -40,9 +40,9 @@ const pageTemplate =  templateArr => {
   ## Description
     * ${templateArr.description}
   ### GitHub Username
-    * <a href="${templateArr.username}"</a>
+    * ${templateArr.username}
   ### Email and Contact Information
-    * <a href="${templateArr.contact}"</a>
+    * ${templateArr.contact}"
   `
 };
 
