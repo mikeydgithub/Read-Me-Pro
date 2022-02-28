@@ -27,7 +27,17 @@ const pageTemplate =  templateArr => {
   ${templateArr.license.map(function buildBagde (userChoice){
     return renderLicenseLink (userChoice)
   })} 
-  # Title 
+
+  #Table of Contents
+  1. Title (#Title)
+  2. Installtion (#Installtion)
+  3. Usage (#Usage)
+  4. Contribution (#Contribution)
+  5. Tests (#Test)
+  6. License (#License)
+  7. Description (#Description)
+
+  ## Title 
     * ${templateArr.title}
   ## Installation
     * ${templateArr.installation}
@@ -35,14 +45,14 @@ const pageTemplate =  templateArr => {
     * ${templateArr.usage}
   ## Contribution
     * ${templateArr.contribution}
-  ## Test
+  ## Tests
     * ${templateArr.test}
   ## License
     * ${templateArr.license.length > 0 ? templateArr.license : 'N/A'}
   ## Description
     * ${templateArr.description}
   ### GitHub Username
-    * <a href="github.com/${templateArr.username}"></a>
+    * ${templateArr.username}
   ### Email and Contact Information
     * ${templateArr.contact}
   `
@@ -58,13 +68,6 @@ const badgeType =
   {userChoice: 'MIT', badgeUrl:'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'}
 ]
 
-// const linkType = [
-//   {userNameLink: '', nameURL: `<a href="github.com/${templateArr.username}"></a>` }
-// ]
-
-
-
-
 
 // Use renderLicenseBadge to take license and set it equal to userChoice
 
@@ -77,7 +80,6 @@ const renderLicenseLink = license => {
 function badgeTest (badgeData, license) {
   return badgeData.userChoice == license
 }
-
 
 
 module.exports = { writeFile };
