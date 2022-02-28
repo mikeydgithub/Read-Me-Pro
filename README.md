@@ -12,21 +12,21 @@
   7. [Description] (#Description)
 
   ## Title 
-    * 1
+     1
   ## Installation
-    * 3
+     3
   ## Usage
-    * 4
+     4
   ## Contribution
-    * 5
+     5
   ## Tests
-    * 6
+     6
   ## License
-    * Apache
+     Apache
   ## Description
-    * 2
+     2
   ### GitHub Username
-    * https:/github.com/mikeydgithub
+    [Repo](https:/github.com/mikeydgithub)
   ### Email and Contact Information
-    * ampgzo2@gmail.com
+     ampgzo2@gmail.com
   

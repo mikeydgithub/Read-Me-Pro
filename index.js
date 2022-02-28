@@ -90,13 +90,13 @@ const promptUser = () => {
     {
         type: 'checkbox',
         name: 'license',
-        message: 'Select which licenses your project uses. If N/A press Enter',
+        message: 'Select which licenses your project uses. If N/A press Enter.',
         choices: ['Apache', 'MIT', 'GPL', 'BSD']
     },
     {
         type: 'input',
         name: 'username',
-        message: 'Enter your GitHub profile username. Example: github.com/<username>.'
+        message: 'Enter your GitHub profile username.'
     },
     {
         type: 'input',
@@ -116,7 +116,6 @@ const promptUser = () => {
 };
 
 
-// TODO: Create a function to initialize app
 // Function call to initialize app
 promptUser()
 

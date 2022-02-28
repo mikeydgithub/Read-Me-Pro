@@ -38,23 +38,23 @@ const pageTemplate =  templateArr => {
   7. [Description] (#Description)
 
   ## Title 
-    * ${templateArr.title}
+     ${templateArr.title}
   ## Installation
-    * ${templateArr.installation}
+     ${templateArr.installation}
   ## Usage
-    * ${templateArr.usage}
+     ${templateArr.usage}
   ## Contribution
-    * ${templateArr.contribution}
+     ${templateArr.contribution}
   ## Tests
-    * ${templateArr.test}
+     ${templateArr.test}
   ## License
-    * ${templateArr.license.length > 0 ? templateArr.license : 'N/A'}
+     ${templateArr.license.length > 0 ? templateArr.license : 'N/A'}
   ## Description
-    * ${templateArr.description}
+     ${templateArr.description}
   ### GitHub Username
-    * https:/github.com/${templateArr.username}
+    [Repo](https:/github.com/${templateArr.username})
   ### Email and Contact Information
-    * ${templateArr.contact}
+     ${templateArr.contact}
   `
 };
 
