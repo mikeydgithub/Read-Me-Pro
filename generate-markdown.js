@@ -29,13 +29,13 @@ const pageTemplate =  templateArr => {
   })} 
 
   #Table of Contents
-  1. Title (#Title)
-  2. Installtion (#Installtion)
-  3. Usage (#Usage)
-  4. Contribution (#Contribution)
-  5. Tests (#Test)
-  6. License (#License)
-  7. Description (#Description)
+  1. [Title] (#Title)
+  2. [Installtion] (#Installtion)
+  3. [Usage] (#Usage)
+  4. [Contribution] (#Contribution)
+  5. [Tests] (#Test)
+  6. [License] (#License)
+  7. [Description] (#Description)
 
   ## Title 
     * ${templateArr.title}
@@ -52,7 +52,7 @@ const pageTemplate =  templateArr => {
   ## Description
     * ${templateArr.description}
   ### GitHub Username
-    * ${templateArr.username}
+    * https:/github.com/${templateArr.username}
   ### Email and Contact Information
     * ${templateArr.contact}
   `
