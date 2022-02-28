@@ -28,7 +28,7 @@ const pageTemplate =  templateArr => {
     return renderLicenseLink (userChoice)
   })} 
 
-  #Table of Contents
+  ## Table of Contents
   1. [Title] (#Title)
   2. [Installtion] (#Installtion)
   3. [Usage] (#Usage)
@@ -37,32 +37,32 @@ const pageTemplate =  templateArr => {
   6. [License] (#License)
   7. [Description] (#Description)
 
-  # Title
+  ## Title
 
      ${templateArr.title}
 
-  # Installation
+  ## Installation
 
      ${templateArr.installation}
 
-  # Usage
+  ## Usage
 
      ${templateArr.usage}
 
-  # Contribution
+  ## Contribution
 
      ${templateArr.contribution}
 
-  # Tests
+  ## Tests
 
      ${templateArr.test}
 
-  # License
+  ## License
 
      ${templateArr.license.length > 0 ? templateArr.license : 'N/A'}
 
-  # Description
-  
+  ## Description
+
      ${templateArr.description}
 
   GitHub Username
