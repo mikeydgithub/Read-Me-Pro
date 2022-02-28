@@ -41,7 +41,7 @@ Description
      
   GitHub Username
     
-  https:/github.com/mikeydgithub
+  [test](https:/github.com/mikeydgithub)
   
   Email and Contact Information
      
