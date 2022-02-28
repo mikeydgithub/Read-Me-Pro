@@ -25,8 +25,8 @@
      Apache
 # Description
      2
-# GitHub Username
+GitHub Username
     https:/github.com/mikeydgithub
-# Email and Contact Information
+Email and Contact Information
      ampgzo2@gmail.com
   
