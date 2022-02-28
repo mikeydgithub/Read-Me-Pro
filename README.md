@@ -11,39 +11,39 @@
   6. [License](#License)
   7. [Description](#Description)
 
-  ## Title:
+  ## Title
 
      1
 
-  ## Installation:
+  ## Installation
 
      3
 
-  ## Usage:
+  ## Usage
 
      4
 
-  ## Contribution:
+  ## Contribution
 
      5
 
-  ## Tests:
+  ## Tests
 
      6
 
-  ## License:
+  ## License
 
      Apache
 
-  ## Description:
+  ## Description
 
      2
 
-  GitHub Username
+  ## GitHub Username
     
-  [https:/github.com/ikeydgithub](https:/github.com/ikeydgithub)
+  [https:/github.com/mikeydgithub](https:/github.com/mikeydgithub)
   
-  Email and Contact Information
+  ## Email and Contact Information
      
-  ampgzo2Gmail.com
+  ampgzo2@gmail.com
   
