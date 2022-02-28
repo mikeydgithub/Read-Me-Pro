@@ -39,31 +39,31 @@ const pageTemplate =  templateArr => {
 
   ## Title
 
-     ${templateArr.title}
+    ${templateArr.title}
 
   ## Installation
 
-     ${templateArr.installation}
+    ${templateArr.installation}
 
   ## Usage
 
-     ${templateArr.usage}
+    ${templateArr.usage}
 
   ## Contribution
 
-     ${templateArr.contribution}
+    ${templateArr.contribution}
 
   ## Tests
 
-     ${templateArr.test}
+    ${templateArr.test}
 
   ## License
 
-     ${templateArr.license.length > 0 ? templateArr.license : 'N/A'}
+    ${templateArr.license.length > 0 ? templateArr.license : 'N/A'}
 
   ## Description
 
-     ${templateArr.description}
+    ${templateArr.description}
 
   ## GitHub Username
     
