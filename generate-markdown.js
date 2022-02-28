@@ -51,9 +51,9 @@ const pageTemplate =  templateArr => {
      ${templateArr.license.length > 0 ? templateArr.license : 'N/A'}
   ## Description
      ${templateArr.description}
-  ### GitHub Username
-    [Repo](https:/github.com/${templateArr.username})
-  ### Email and Contact Information
+ GitHub Username
+    [Repo]https:/github.com/${templateArr.username}
+ Email and Contact Information
      ${templateArr.contact}
   `
 };
