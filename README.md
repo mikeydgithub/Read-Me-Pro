@@ -22,7 +22,7 @@
 
   ## Usage
 
-  For generating Read Me files quickly.
+  For creating high quality read me files quickly.
 
   ## Contribution
 
@@ -30,7 +30,7 @@
 
   ## Tests
 
-  Tests include using the generator to properly display the answers to these questions.
+  Running the generator in terminal and testing for results.
 
   ## License
 
@@ -38,7 +38,7 @@
 
   ## Description
 
-  Read Me Pro read me generator using github markdown.
+  Read Me Pro is a generating read me tool.
 
   ## GitHub Username
     
@@ -49,5 +49,5 @@
   ampgzo2@gmail.com
 
   ## Walk through Video
+  https://drive.google.com/file/d/1z708DAjTclMJGCnbqT2TAF33nbypx85_/view
   
-  https://drive.google.com/file/d/1OKhxYWDfstHZF4jGRpCqZaFH8bazzeqz/view
