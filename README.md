@@ -1,6 +1,6 @@
 
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
   ## Table of Contents
   1. [Title](#Title)
@@ -10,34 +10,35 @@
   5. [Tests](#Test)
   6. [License](#License)
   7. [Description](#Description)
+  8. [Walk through Video](#Video)
 
   ## Title
 
-  1
+  Read Me Pro
 
   ## Installation
 
-  3
+  Run the node index in your terminal.
 
   ## Usage
 
-  4
+  For generating Read Me files quickly.
 
   ## Contribution
 
-  5
+  Made by Mike Diamond
 
   ## Tests
 
-  6
+  Tests include using the generator to properly display the answers to these questions.
 
   ## License
 
-  Apache
+  MIT
 
   ## Description
 
-  2
+  Read Me Pro read me generator using github markdown.
 
   ## GitHub Username
     
@@ -46,4 +47,7 @@
   ## Email and Contact Information
      
   ampgzo2@gmail.com
+
+  ## Walk through Video
   
+  https://drive.google.com/file/d/1OKhxYWDfstHZF4jGRpCqZaFH8bazzeqz/view

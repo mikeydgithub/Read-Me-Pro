@@ -5,7 +5,7 @@ const { writeFile } = require ('./generate-markdown');
 // TODO: Create an array of questions for user input
 const promptUser = () => {
     return inquirer.prompt([
-    {
+    {//Add Title
         type: 'input',
         name: 'title',
         message: 'What is the name of your Read Me? (Required)',
@@ -19,7 +19,7 @@ const promptUser = () => {
             }
         }
     },
-    {
+    {//Add Description
         type: 'input',
         name: 'description',
         message: "Please add a description",
@@ -33,7 +33,7 @@ const promptUser = () => {
             }
         }
     },
-    {
+    {//Add Installation
         type: 'input',
         name: 'installation',
         message: 'Please enter instructions for the Read Me file.',
@@ -47,7 +47,7 @@ const promptUser = () => {
             }
         }
     },
-    {
+    {//Add Useage
         type: 'input',
         name: 'usage',
         message: 'Please enter usage information.',
@@ -61,7 +61,7 @@ const promptUser = () => {
             }
         }
     },
-    {
+    {//Add Contribution
         type: 'input',
         name: 'contribution',
         message: 'Specify contributions.',
@@ -74,7 +74,7 @@ const promptUser = () => {
             }
         }
     },
-    {
+    {//Add Tests
         type: 'input',
         name: 'test',
         message: 'Please include tests.',
@@ -87,24 +87,24 @@ const promptUser = () => {
             }
         }
     },
-    {
+    {//Add license
         type: 'checkbox',
         name: 'license',
         message: 'Select which licenses your project uses. If N/A press Enter.',
         choices: ['Apache', 'MIT', 'GPL', 'BSD']
     },
-    {
+    {//Add Username
         type: 'input',
         name: 'username',
         message: 'Enter your GitHub profile username.'
     },
-    {
+    {//Add Contact
         type: 'input',
         name: 'contact',
         message: 'Please include your email and any additional contact information.'
 
     }
-    ])
+    ])//Then log the reults of projectData and wright if project data exists return writeFile called projectData. Else return back to the start of the function.
     .then(projectData => {
             console.log(projectData)
             if (projectData){
