@@ -82,6 +82,8 @@ const pageTemplate =  templateArr => {
   ${templateArr.contact}
 
   ## Walk through Video
+  
+  [https://drive.google.com/file/d/1z708DAjTclMJGCnbqT2TAF33nbypx85_/view]
   `
 };
 
